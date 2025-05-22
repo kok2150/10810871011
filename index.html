@@ -1,43 +1,68 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCCHHS STUDIO</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #e0e0e0;
-        }
-        .text-content {
-            margin-bottom: 15px;
-            font-size: 15px;
-            color: #333;
-        }
-        img {
-            max-width: 300px; 
-            max-height: 300px; 
-            width: auto;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        @media (max-width: 600px) {
-            img {
-                max-width: 80%; 
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>你来了？</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #3c3c3c;
+      font-family: sans-serif;
+      color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      border-bottom: 4px solid #d9a74a;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    .vol {
+      margin-top: 40px;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+    }
+    .vol-box {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .black-box {
+      background-color: black;
+      color: white;
+    }
+    .white-box {
+      background-color: white;
+      color: black;
+    }
+  </style>
 </head>
 <body>
-    <div class="text-content">你来了？嗨，我们正在寻找合适的人来继承MCCHHS，看来你就是最适合的人了。如果你有兴趣继承这张地图，请发送邮件至 mcchhsstudio@gmail.com 与我们联系。 </div>
-    <img src="mcchhsstudio.png" alt="ERROR"><div class="text-content">致上</div>
+  <div class="container">
+    <h1>你来了？</h1>
+    <p>
+      嗨，我们正在寻找合适的人来继承 MCCHHS，看来你就是最适合的人了。<br>
+      如果你有兴趣继承这张地图，请发送邮件至 <strong>mcchhsstudio@gmail.com</strong> 与我们联系。*我们需要确定你的解题思路，来确保你不是作弊通关。
+    </p>
+    <div class="vol">
+      Vol.
+      <div class="vol-box black-box">1</div>
+      <div class="vol-box white-box">0</div>
+    </div>
+  </div>
 </body>
 </html>
