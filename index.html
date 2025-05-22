@@ -10,11 +10,15 @@
       background-color: #3c3c3c;
       font-family: sans-serif;
       color: white;
+      position: relative;
+      overflow: hidden;
     }
     .container {
       max-width: 800px;
       margin: 100px auto;
       padding: 20px;
+      position: relative;
+      z-index: 2;
     }
     h1 {
       font-size: 48px;
@@ -26,28 +30,18 @@
       font-size: 18px;
       line-height: 1.8;
     }
-    .vol {
-      margin-top: 40px;
-      font-size: 40px;
-      display: flex;
-      align-items: center;
+    .watermark {
+      position: fixed;
+      bottom: -50px;
+      right: -50px;
+      opacity: 0.05;
+      z-index: 1;
+      pointer-events: none;
     }
-    .vol-box {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      margin-left: 10px;
-    }
-    .black-box {
-      background-color: black;
-      color: white;
-    }
-    .white-box {
-      background-color: white;
-      color: black;
+    .watermark img {
+      width: 600px;
+      height: auto;
+      filter: grayscale(100%);
     }
   </style>
 </head>
@@ -56,13 +50,12 @@
     <h1>你来了？</h1>
     <p>
       嗨，我们正在寻找合适的人来继承 MCCHHS，看来你就是最适合的人了。<br>
-      如果你有兴趣继承这张地图，请发送邮件至 <strong>mcchhsstudio@gmail.com</strong> 与我们联系。*我们需要确定你的解题思路，来确保你不是作弊通关。
+      如果你有兴趣继承这张地图，请发送邮件至 <strong>mcchhsstudio@gmail.com</strong> 与我们联系。
     </p>
-    <div class="vol">
-      Vol.
-      <div class="vol-box black-box">1</div>
-      <div class="vol-box white-box">0</div>
-    </div>
+  </div>
+
+  <div class="watermark">
+    <img src="mcchhsstudio.png" alt="Logo">
   </div>
 </body>
 </html>
